@@ -131,13 +131,13 @@ function f_cpfstab {
                 if [[ $var = "Y" ]]; then
                 cp /etc/fstab /etc/fstab.old
         fi
-} 
+}
 
 
 #Función plantilla quota
 function  f_plantillaquota {
         read -p "Indique el usuario que quiere usar como plantilla: " user
-		if [[ $(cat/etc/passwd |grep $user) ]]; 
+		if [[ $(cat/etc/passwd |grep $user) ]];
 		then
 			echo "El usuario ya existe"
 		else
@@ -151,11 +151,11 @@ function  f_plantillaquota {
 function f_configura_quota {
 	read -p "¿Que capacidad en MB desea asignarle al usuario $v_user?:"
 		var
-		if [[ $var =$i~ ^[0-9]+$ ]]; 
+		if [[ $var =$i~ ^[0-9]+$ ]];
 		then
 			echo "$v_uer $var" >> /QUOTA/aquota.user
 			echo "$v_user $var" >> /QUOTA/aquota.group
-			echo "Capacidad asignada."	
+			echo "Capacidad asignada."
 		else
 			echo "No es un numero."
 		fi
