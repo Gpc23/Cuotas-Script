@@ -1,1 +1,28 @@
 # Cuotas-Script
+# Quotas automatizadas
+
+## Introducción
+El siguiente script está diseñado para configurar quotas en Debian 11 y hacerlo
+de forma automática. 
+
+Gracias por adelantado a: 
+* [Maria Jesus Alloza](https://github.com/Legnakra)
+* [Jose Antonio Canalo González](https://.github.com/joseantoniocgongalez)
+
+## Planteamiento
+Las funciones que hemos creado son:
+* Comprobar que el usuario está como *root*.
+* Comprobar que existe el directorio _/QUOTA_.
+* Listar los dispositivos de bloques en el que se desea implementar la cuota.
+* Obtener su _UUID_.
+* Modificar _/etc/fstab_.
+* Comprobar si existen los ficheros _aquota.user_ y _aquota.group_.
+* Habilitar y montar quota.
+* Crear un usuario donde copiaremos su quota al resto de usuarios.
+* Configurar la quota.
+
+## Autores :computer::computer_mouse:
+* María Jesús Alloza Rodríguez
+* Gonzalo Peña Calero
+* Jose Antonio Canalo González
+:school: I.E.S. Gonzalo Nazareno (Dos Hermanas, Sevilla).
