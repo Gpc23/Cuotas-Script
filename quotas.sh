@@ -12,6 +12,7 @@ q_group="/QUOTA/aquota.group"
 
 #Fin Zona.
 
+
 #Zona de declaración de funciones.
 
 #Función comprobar root
@@ -67,6 +68,7 @@ function f_UUID {
 }
 
 egrep/ awk
+
 
 #Función modificar fstab
 function f_modifica_fstab {
