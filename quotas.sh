@@ -35,6 +35,7 @@ function f_existe_directorio {
         read -p "El directorio no existe. ¿Quiere crearlo (Y/N)?" var;
         if [[ $var = "Y" ]]; then
             mkdir $directorio;
+		echo "Directorio creado."
             return 0;
         else
             echo "Salir.";
