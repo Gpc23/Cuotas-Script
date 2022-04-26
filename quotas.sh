@@ -68,9 +68,6 @@ function f_UUID {
 
 egrep/ awk
 
-
-
-
 #Función modificar fstab
 function f_modifica_fstab {
         if f_chkfstab ; then
