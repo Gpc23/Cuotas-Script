@@ -18,20 +18,11 @@ q_group="/QUOTA/aquota.group"
 #Función comprobar root
 function f_miraRoot {
         if [ $(id -u) = 0 ]; then
-                return 0;
+        	return 0;
         else
-                echo "Ingrese como root (Necesario para ejecutar el script.)"
-                read -p "¿Desea ingresar como root (Y/N)?: " var;
-                        if [[ $var = "Y" ]]; then
-                                sudo su
-                                if [ $(id -u) = 0 ]; then
-                                        return 0;
-                                else
-                                        return 1;
-		                        exit
-                                fi
-                        fi
-        fi
+        	echo "Ingrese como root (Necesario para ejecutar el script.)"
+		exit
+	fi
 }
 
 
