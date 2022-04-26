@@ -59,7 +59,7 @@ function f_UUID {
         exit
 }
 
-egrep/ awk
+#awk
 
 
 #Función modificar fstab
