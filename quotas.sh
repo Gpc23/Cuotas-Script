@@ -28,7 +28,7 @@ function f_miraRoot {
                                         return 0;
                                 else
                                         return 1;
-                        exit
+		                        exit
                                 fi
                         fi
         fi
@@ -43,7 +43,7 @@ function f_existe_directorio {
     else
         read -p "El directorio no existe. ¿Quiere crearlo (Y/N)?" var;
         if [[ $var = "Y" ]]; then
-            $(mkdir /$directorio);
+            mkdir $directorio;
             return 0;
         else
             echo "Salir.";
